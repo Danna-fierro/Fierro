@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartado - Danna Camila</title>
+    <style>
+        /* Estilo base igual al index */
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            text-align: center; 
+            background-color: #f4f4f9; 
+            margin: 0; 
+            padding: 20px; 
+        }
+
+        h1 { 
+            color: #333; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            margin-bottom: 20px;
+        }
+
+        /* Contenedor superior: Casita + Apartados */
+        .navegacion-superior {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* Reducido un poco para que quepan los 13 */
+            max-width: 1200px;
+            margin: 0 auto 30px;
+            flex-wrap: wrap;
+        }
+
+        /* Estilo del icono de casa */
+        .home-icon {
+            background-color: #333; 
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 20px;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .home-icon:hover {
+            background-color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Botones de apartados pequeños arriba */
+        .mini-boton {
+            background-color: #800020;
+            color: white;
+            padding: 10px 12px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 0.75em;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .mini-boton:hover {
+            background-color: #a00028;
+            transform: translateY(-3px);
+        }
+
+        /* Caja de contenido abajo */
+        .cajita-contenido {
+            background-color: white;
+            padding: 50px 20px;
+            border-radius: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            min-height: 200px;
+        }
+
+        h2 {
+            color: #800020;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Danna Camila Fierro Hermosillo</h1>
+
+    <div class="navegacion-superior">
+        <a href="../index.html" class="home-icon">🏠</a>
+        <a href="apartado1.html" class="mini-boton">Ap. 1</a>
+        <a href="apartado2.html" class="mini-boton">Ap. 2</a>
+        <a href="apartado3.html" class="mini-boton">Ap. 3</a>
+        <a href="apartado4.html" class="mini-boton">Ap. 4</a>
+        <a href="apartado5.html" class="mini-boton">Ap. 5</a>
+        <a href="apartado6.html" class="mini-boton">Ap. 6</a>
+        <a href="apartado7.html" class="mini-boton">Ap. 7</a>
+        <a href="apartado8.html" class="mini-boton">Ap. 8</a>
+        <a href="apartado9.html" class="mini-boton">Ap. 9</a>
+        <a href="apartado10.html" class="mini-boton">Ap. 10</a>
+        <a href="apartado11.html" class="mini-boton">Ap. 11</a>
+        <a href="apartado12.html" class="mini-boton">Ap. 12</a>
+        <a href="apartado13.html" class="mini-boton">Ap. 13</a>
+    </div>
+
+    <div class="cajita-contenido">
+        <h2>3.10 Destino de Vacaciones</h2>
+        <p>¿A dónde te alcanza para ir con "La Tortuga"?</p>
+        <input type="number" id="dato1" placeholder="Tu presupuesto total">
+        <input type="number" id="dato2" placeholder="Costo por kilómetro">
+        <button onclick="ejecutarAlgoritmo()" class="mini-boton">Buscar Destino</button>
+        <h3 id="res">Resultado: -</h3>
+<script src="../scripts/a10.js"></script>
+    </div>
+
+</body>
+</html>
